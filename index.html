@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TWIG-JS</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<header id="header" class="header"></header>
+
+	<div class="content"></div>
+
+	<footer class="footer"></footer>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twig.js/0.8.9/twig.min.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+	loadTemplate("templates/footer.twig", "footer", "texto", {texto: "texto del footer"});
+	loadTemplate("templates/header.twig", "header", "titulo", {titulo: "el título de la página"});
+	loadTemplate("templates/content.twig", "content", "content", {list: ["one", "two", "three"]});
+	</script>
+</body>
+</html>

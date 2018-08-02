@@ -1,0 +1,13 @@
+
+{% set subtitle = "Twig.js templating test" %}
+{% set pageTitle = "Use Twig from the start!" %}
+{% set benefits = ["Fast!", "Easy!", "Efficient!"] %}
+
+<h2>{{ subtitle }}</h2>
+<ul>
+	{% for value in list %}
+		<li>{{ value }}</li>
+	{% endfor %}
+</ul>
+
+
